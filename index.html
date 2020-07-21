@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header text -->
+    <header class="header">
+        <h1>Stone Paper Scissor</h1>
+    </header>
+    <!-- flex section -->
+    <section class="container">
+        <!-- user image section -->
+        <div class="container__userBox">
+            <p class="container__name">User</p>
+            <div class="container__user">
+                <img src="images/paper.svg" class="container__userImg">
+            </div>
+            <!-- <p class="container__userResult result"></p> -->
+        </div>
+        <!-- score section -->
+        <div class="container__score">
+            <p>
+                <span class="container__score--user">0</span> : <span class="container__score--com">0</span>
+            </p>
+        </div>
+        <!-- Computer image section -->
+        <div class="container__comBox">
+            <p class="container__name">Computer</p>
+            <div class="container__com">
+                <img src="images/paper.svg" class="container__comImg">
+            </div>
+            <!-- <p class="container__comResult result"></p> -->
+        </div>
+    </section>
+    <!-- game draw result -->
+    <div class="result">
+        <p class="result__game"></p>
+    </div>
+    <!-- button section -->
+    <section class="button__container">
+        <button class="stone">stone</button>
+        <button class="paper">paper</button>
+        <button class="scissor">scissor</button>
+    </section>
+    <!-- script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

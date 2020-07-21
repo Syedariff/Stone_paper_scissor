@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #fefefe;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.header {
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #222;
+    color: #FFF;
+}
+
+.header h1 {
+    padding-left: 2rem;
+}
+
+.container {
+    display: flex;
+    margin: 5rem 1rem 2rem;
+    justify-content: center;
+}
+
+.container__name {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.container__user {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__userImg {
+    width: 12rem;
+    height: 12rem;
+    color: #222;
+}
+
+.container__score {
+    align-self: center;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 5rem;
+    width: 10rem;
+}
+
+.container__com {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__comImg {
+    width: 12rem;
+    height: 12rem;
+    color: #222;
+}
+
+.result__game {
+    background-color: green;
+    width: 15rem;
+    font-size: 1.5rem;
+    margin: .5rem auto;
+    text-align: center;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+.button__container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+
+.button__container button {
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
