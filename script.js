@@ -31,49 +31,51 @@ for (let i = 0; i < button.length; i++) {
             comPoint.innerText = comScore;
         }
 
-        // If game tie
-        if (userChoice === comChoice) {
-            result.innerHTML = `It's Draw`;
-            return;
-        }
 
-        // if user select stone
-        if (userChoice == "stone" && comChoice == "scissor") {
-            result.innerHTML = "User Win";
-            userScore++;
-            update();
-            return;
-        } else if (userChoice == "stone" && comChoice == "paper") {
-            result.innerHTML = "Computer Win"
-            comScore++;
-            update();
-            return;
-        }
+        switch (true) {
+            // if game tie
+            case userChoice === comChoice:
+                result.innerHTML = `It's Draw`;
+                break;
 
-        // if user select paper
-        if (userChoice == "paper" && comChoice == "stone") {
-            result.innerHTML = "User Win";
-            userScore++;
-            update();
-            return;
-        } else if (userChoice == "paper" && comChoice == "scissor") {
-            result.innerHTML = "Computer Win";
-            comScore++;
-            update();
-            return;
-        }
+            // user select stone
+            case userChoice == "stone" && comChoice == "scissor":
+                result.innerHTML = "User Win";
+                userScore++;
+                update();
+                break;
 
-        // if user select scissor
-        if (userChoice == "scissor" && comChoice == "paper") {
-            result.innerHTML = "User Win";
-            userScore++;
-            update();
-            return;
-        } else if (userChoice == "scissor" && comChoice == "stone") {
-            result.innerHTML = "Computer Win";
-            comScore++;
-            update();
-            return;
+            case userChoice == "stone" && comChoice == "paper":
+                result.innerHTML = "Computer Win"
+                comScore++;
+                update();
+                break;
+
+            // user select paper
+            case userChoice == "paper" && comChoice == "stone":
+                result.innerHTML = "User Win";
+                userScore++;
+                update();
+                break;
+
+            case userChoice == "paper" && comChoice == "scissor":
+                result.innerHTML = "Computer Win";
+                comScore++;
+                update();
+                break;
+
+            // user select scissorr
+            case userChoice == "scissor" && comChoice == "paper":
+                result.innerHTML = "User Win";
+                userScore++;
+                update();
+                break;
+
+            case userChoice == "scissor" && comChoice == "stone":
+                result.innerHTML = "Computer Win";
+                comScore++;
+                update();
+                break;
         }
     });
 }
